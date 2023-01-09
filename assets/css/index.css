@@ -1,0 +1,40 @@
+.glide_banner{
+    max-height: calc(60vh - 100px);
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.glide_banner .banner img{
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+
+
+.catolog_list{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 0;
+}
+
+.catolog_list .catolog_elem{
+    padding: 5px 20px;
+    margin: 0px 5px 5px 0px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid var(--index2);
+    transition: 0.2s;
+}
+
+.catolog_list .choosen_catolog_elem{
+    background: var(--index2);
+    user-select: none;
+}
+
+
+.catolog_list .catolog_elem:hover{
+    background: var(--index3);
+}

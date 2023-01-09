@@ -1,0 +1,266 @@
+.preloader{
+    display: none;
+}
+
+.discount_content{
+    margin: 50px 0px;
+}
+
+.cart_content{
+    margin: 30px 0px;
+}
+
+.cart_content .cart_list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.cart_content .good_card{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+.cart_content .good_card_img{
+    width: 25%
+}
+
+.cart_content .good_card_img img{
+    border-radius: 5px;
+}
+
+
+
+
+
+
+.cart_content .good_name{
+    margin: 0;
+    font-size: 15px;
+    width: calc(75% - 30px);
+    padding: 3px 10px;
+    flex-direction: column;
+}
+
+.cart_content .good_name span{
+    color: var(--gray);
+}
+
+.cart_content .good_discrube{
+    display: none;
+}
+
+.cart_content .good_price{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.cart_content .price_value{
+    font-size: 15px;
+}
+
+.cart_content .product_icon{
+    left: 0px;
+    top: 0px;
+    width: 35px;
+}
+
+
+.cart_content .add_btn{
+    width: 25px;
+    height: 25px;
+    background: var(--index3);
+    border-radius: 5px;
+    margin-right: calc(50% - 50px);
+}
+
+.cart_content .add_btn img{
+    display: none;
+}
+
+.cart_content .add_btn:after,
+.cart_content .add_btn:before{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 50%;
+    background: var(--text);   
+}
+
+.cart_content .add_btn::after{
+    transform: rotate(90deg);
+}
+
+
+
+
+
+.cart_content .minus_btn{
+    height: 25px;
+    width: 25px;
+    background: var(--index3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-left: auto;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cart_content .minus_btn:after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 50%;
+    background: var(--text);
+    transform: rotate(0);
+}
+
+.cart_content .minus_btn::before{
+    display: none;
+}
+
+.cart_content .good_num{
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart_content .sum_of_good{
+    position: absolute;
+    right: 10px;
+    color: var(--text);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.cart_content .del_btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 25px;
+    width: 25px;
+    background: var(--index3);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.cart_content .del_btn:after,
+.cart_content .del_btn::before{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 60%;
+    background: var(--text);
+    transform: rotate(-45deg);  
+
+}
+
+.cart_content .del_btn:after{
+    transform: rotate(45deg);
+}
+
+
+
+
+
+.help_block{
+    width: 100%;
+    overflow: hidden;
+    display: none;
+}
+
+.help_block img{
+    max-width: 400px;
+    margin: 10px 0px;
+}
+
+
+
+
+
+
+
+
+.total_block{
+    background: var(--index3);
+    max-width: 400px;
+    padding: 5px 20px;
+    margin: 30px auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.total_block a{
+    margin: 25px auto;
+    background: var(--index2);
+    color: var(--text);
+    padding: 15px 30px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    transition: 0.2s;
+}
+
+.total_block a:hover{
+    background: var(--index);
+    color: var(--bg);
+}
+
+.total_block div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    font-weight: 700;
+    background: var(--bg);
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.total_discount{
+    margin-left: auto;
+    color: var(--index1);
+    font-size: 18px;
+}
+
+.total_sum{
+    margin-left: auto;
+    color: var(--index);
+    font-size: 25px;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 650px) {
+    .total_block{
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .cart_content .good_card{
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+
+    .help_block img{
+        width: 100%;
+    }
+}
